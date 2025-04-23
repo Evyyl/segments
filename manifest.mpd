@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" minBufferTime="PT1.5S" type="static" mediaPresentationDuration="PT30S" maxSegmentDuration="PT2S" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011">
+  <Period>
+    <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1">
+      <Representation id="360p" bandwidth="800000" width="640" height="360">
+        <BaseURL>http://127.0.0.1:5000/video/360p</BaseURL>
+      </Representation>
+      <Representation id="480p" bandwidth="1400000" width="854" height="480">
+        <BaseURL>http://127.0.0.1:5000/video/480p</BaseURL>
+      </Representation>
+      <Representation id="720p" bandwidth="2800000" width="1280" height="720">
+        <BaseURL>http://127.0.0.1:5000/video/720p</BaseURL>
+      </Representation>
+      <Representation id="1080p" bandwidth="5000000" width="1920" height="1080">
+        <BaseURL>http://127.0.0.1:5000/video/1080p</BaseURL>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
